@@ -1,0 +1,26 @@
+body{
+   text-align: center; 
+   margin-top: 100px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tabuleiro{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gray;
+    width: 320px;
+    height: 320px;
+    margin: auto; 
+    border-radius: 15px;
+}
+
+.fileira{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    margin: 1px;
+    border-radius: 10px;
+}
