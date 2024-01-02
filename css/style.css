@@ -1,3 +1,11 @@
+:root{
+    --tamanho-font:50px;
+    --posicao:absolute;
+    --topo:0;
+    --bottom:0;
+    --left:0;
+    --right:0;
+}
 body{
    text-align: center; 
    margin-top: 100px;
@@ -23,4 +31,30 @@ h1{
     width: 100px;
     margin: 1px;
     border-radius: 10px;
+}
+
+.x,.o{
+    position: relative;
+}
+
+.x::after{
+    content: "\274C";
+    font-size: var(--tamanho-font);
+    position: var(--posicao);
+    line-height: 100px;
+    top: var(--topo);
+    left: var(--left);
+    right: var(--right);
+    bottom: var(--bottom);
+}
+
+.o::after{
+    content: "\2B55";
+    font-size: var(--tamanho-font);
+    position: var(--posicao);
+    top: var(--topo);
+    left: var(--left);
+    right: var(--right);
+    bottom: var(--bottom);
+    line-height: 100px;
 }
