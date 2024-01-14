@@ -17,7 +17,14 @@ function cliclado(event){
     console.log(event.target)
     let quadrante = event.target
     let posicao = quadrante.id
-    jogada(posicao)
+    if(jogada(posicao)== true){
+
+        setTimeout(()=>{
+            atualizaQuadrante()
+            alert("fim de jogo")
+        },500)
+       
+    }
     atualizaQuadrante()
 }
 
