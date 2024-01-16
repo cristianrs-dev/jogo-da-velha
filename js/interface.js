@@ -1,6 +1,6 @@
 //esse trecho garante que o codigo foi devidamente carregado no documento
 document.addEventListener('DOMContentLoaded',quadrante)
-
+alert("jogo em desenvolvimento")
 //essa função percorre todos os ids presentes no tabuleiro
 function quadrante(){
     let quadrante = document.querySelectorAll(".quadrante")
@@ -22,6 +22,7 @@ function cliclado(event){
         setTimeout(()=>{
             atualizaQuadrante()
             alert("fim de jogo")
+            
         },500)
        
     }
