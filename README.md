@@ -10,4 +10,5 @@ https://www.figma.com/file/XacOB105R39hBK8f8SZUYt/jogo?type=design&node-id=0%3A1
 
 <h2>Protótipo</h2>
 
-![Captura de Tela (1061)](https://github.com/eclipseCJP/jogo-da-velha/assets/58758617/5310c862-5fea-465f-9fb2-ae827cb1ec0a)
+![image](https://github.com/eclipseCJP/jogo-da-velha/assets/58758617/ac3a2352-6489-430e-921e-c44f768296e2)
+
