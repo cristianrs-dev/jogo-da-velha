@@ -1,6 +1,22 @@
-//esse trecho garante que o codigo foi devidamente carregado no documento
 document.addEventListener('DOMContentLoaded',quadrante)
-alert("jogo em desenvolvimento")
+document.addEventListener('DOMContentLoaded',jogadores)
+
+function jogadores(){
+    let players = document.querySelectorAll(".player")
+    players.forEach((indice) => {
+        indice.addEventListener('click',playerEscolhido)
+    });
+}
+
+function playerEscolhido(event){
+    let playerSelecionado = event.target
+    console.log(playerSelecionado.id)
+    return playerSelecionado
+}
+
+//esse trecho garante que o codigo foi devidamente carregado no documento
+
+
 //essa função percorre todos os ids presentes no tabuleiro
 function quadrante(){
     let quadrante = document.querySelectorAll(".quadrante")
@@ -15,9 +31,10 @@ para a função jogada
 */
 function cliclado(event){
     console.log(event.target)
+    let player = playerEscolhido(event)
     let quadrante = event.target
     let posicao = quadrante.id
-    if(jogada(posicao)== true){
+    if(jogada(posicao,player.id)== true){
 
         setTimeout(()=>{
             atualizaQuadrante()
