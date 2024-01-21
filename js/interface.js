@@ -10,8 +10,7 @@ function jogadores(){
 
 function playerEscolhido(event){
     let playerSelecionado = event.target
-    console.log(playerSelecionado.id)
-    return playerSelecionado
+    jogadorEscolhido(playerSelecionado.id)
 }
 
 //esse trecho garante que o codigo foi devidamente carregado no documento
@@ -30,11 +29,10 @@ essa função verifica qual foi o quadrante clicado e passa a posição desse qu
 para a função jogada
 */
 function cliclado(event){
-    console.log(event.target)
-    let player = playerEscolhido(event)
+    
     let quadrante = event.target
     let posicao = quadrante.id
-    if(jogada(posicao,player.id)== true){
+    if(jogada(posicao)== true){
 
         setTimeout(()=>{
             atualizaQuadrante()

@@ -1,26 +1,30 @@
 let tabuleiro = ['','','','','','','','','']
-let player = 0
+let jogador=0
 let simbolo = ['x','o']
 let fimDeJogo = false
 
-
+function jogadorEscolhido(jogador){
+    let player = jogador
+    console.log(simbolo[player])
+}
 // essa função rebece a posição em interface e marca a posição com o simbolo
 //function jogada(position){
-function jogada(position,player){
+function jogada(position){
     if(fimDeJogo){
         return
     }
-
+    
     if(tabuleiro[position]==''){
-        tabuleiro[position]=simbolo[player]
+        
+        tabuleiro[position]=simbolo[jogador]
         fimDeJogo = ganhador()
 
         if(fimDeJogo == false){
 
-            if(player ==  0){
-                player = 1
+            if(jogador ==  0){
+                jogador = 1
             }else{
-                player = 0
+                jogador = 0
             }
 
         }
