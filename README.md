@@ -9,7 +9,7 @@
 
 
 <h3>Link</h3>
-https://eclipsecjp.github.io/jogo-da-velha/
+https://cristianrs-dev.github.io/jogo-da-velha/
 
 <h2>Protótipo</h2>
 
